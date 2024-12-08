@@ -7,6 +7,12 @@ const searchbtn=document.querySelector(".search button");
 const weathericon=document.querySelector(".weather-icon");
 
 
+/*
+document.querySelector(".city").innerHTML= data.name;
+document.querySelector(".temp").innerHTML= Math.round(data.main.temp)+"°C";
+document.querySelector(".humidity").innerHTML= data.main.humidity+"%";
+document.querySelector(".wind").innerHTML= data.wind.speed+" km/h";
+*/
 async function checkWeather(city){
 
     
@@ -26,19 +32,19 @@ document.querySelector(".humidity").innerHTML= data.main.humidity+"%";
 document.querySelector(".wind").innerHTML= data.wind.speed+" km/h";
 
 if(data.weather[0].main=="Clouds"){
-    weathericon.src="SkyTracker/Images/clouds.png";
+    weathericon.src="./clouds.png";
 }
 else if(data.weather[0].main=="Clear"){
-    weathericon.src="SkyTracker/Images/clear.png";
+    weathericon.src="./clear.png";
 }
 else if(data.weather[0].main=="Rain"){
-    weathericon.src="SkyTracker/Images/rain.png";
+    weathericon.src="./rain.png";
 }
 else if(data.weather[0].main=="Drizzle"){
-    weathericon.src="SkyTracker/Images/drizzle.png";
+    weathericon.src="./drizzle.png";
 }
 else if(data.weather[0].main=="Mist"){
-    weathericon.src="SkyTracker/Images/mist.png";
+    weathericon.src="./mist.png";
 }
 
 document.querySelector(".weather").style.display="block";
