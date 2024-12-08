@@ -26,19 +26,19 @@ document.querySelector(".humidity").innerHTML= data.main.humidity+"%";
 document.querySelector(".wind").innerHTML= data.wind.speed+" km/h";
 
 if(data.weather[0].main=="Clouds"){
-    weathericon.src="images/clouds.png";
+    weathericon.src="SkyTracker/Images/clouds.png";
 }
 else if(data.weather[0].main=="Clear"){
-    weathericon.src="images/clear.png";
+    weathericon.src="SkyTracker/Images/clear.png";
 }
 else if(data.weather[0].main=="Rain"){
-    weathericon.src="images/rain.png";
+    weathericon.src="SkyTracker/Images/rain.png";
 }
 else if(data.weather[0].main=="Drizzle"){
-    weathericon.src="images/drizzle.png";
+    weathericon.src="SkyTracker/Images/drizzle.png";
 }
 else if(data.weather[0].main=="Mist"){
-    weathericon.src="images/mist.png";
+    weathericon.src="SkyTracker/Images/mist.png";
 }
 
 document.querySelector(".weather").style.display="block";
